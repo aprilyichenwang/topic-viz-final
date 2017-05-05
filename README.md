@@ -11,6 +11,8 @@ Neighborhood historical data is from Redfin: https://www.redfin.com/blog/data-ce
 
 Neighborhood map data (shapefile) is from the City of Seattle: https://data.seattle.gov/dataset/Neighborhoods/2mbt-aqqx
 
+Neighborhood description data is from findwell: http://seattle.findwell.com/seattle-neighborhoods/
+
 # Perspectives
 
 ### Geospatial
@@ -33,8 +35,4 @@ Neighborhood map data (shapefile) is from the City of Seattle: https://data.seat
 * Can select month of data plotted, and highlighting is maintained.
 
 ![Alt text](/screenshots/corr.png?raw=true "Optional Title")
-
-# TODO
-* Combine three Shiny apps into a single app with tabs to switch between the views.
-
 
