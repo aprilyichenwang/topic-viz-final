@@ -49,4 +49,4 @@ neighborhoods_vars <- neighborhoods %>% select(one_of(c("Days on Market","Median
 neighborhoods_norm <- df_par <- bind_cols(neighborhoods_group, neighborhoods_vars)
 
 # Neighborhood descriptions
-
+descriptions <- read.csv('neighborhood_descriptions.csv', stringsAsFactors = FALSE)
