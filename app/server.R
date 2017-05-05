@@ -1,3 +1,6 @@
+# Install needed packages
+source('install_packages.R',local = TRUE)
+
 library(shiny)
 library(ggvis)
 library(dplyr)
