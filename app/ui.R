@@ -22,7 +22,8 @@ shinyUI(fluidPage(
                                    choiceValues = c("Days on Market","Median Sale Price","Homes Sold",
                                                     "Inventory","Median Ppsf")),
                           style='margin-top: 20px;'),
-                      div(htmlOutput("neighborhood_detail"), style='margin-top: 20px;')
+                      div(htmlOutput("neighborhood_detail"), style='margin-top: 20px;'),
+                      div(htmlOutput("neighborhood_desc"), style='margin-top: 20px;')
                )
              )
              ),
@@ -67,6 +68,6 @@ shinyUI(fluidPage(
           <ul>
        <li>Neighborhood historical data is from Redfin: https://www.redfin.com/blog/data-center</li>
        <li>Neighborhood map data (shapefile) is from the City of Seattle: https://data.seattle.gov/dataset/Neighborhoods/2mbt-aqqx</li>
-       </ul>')
+       <li>Neighborhood description data is from findwell: http://seattle.findwell.com/seattle-neighborhoods/</li></ul>')
 )
 )

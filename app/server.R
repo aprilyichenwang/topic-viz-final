@@ -95,6 +95,8 @@ shinyServer(function(input, output) {
       d <- neighborhoods_2017 %>%
         filter(common_name == neighborhood_name)
       
+      d_desc <- descriptions %>%
+        filter(common_name == neighborhood_name)
       
       if (neighborhood_name==""){
         
@@ -113,8 +115,8 @@ shinyServer(function(input, output) {
                      "<b>Median Days on Market:</b> ", round(d[['Days on Market']]), "<br/>",
                      "<b>Median Price per Sq. Ft.:</b> ", round(d[['Median Ppsf']]), "<br/>",
                      sep=""))
-          
         })
+        output$neighborhood_desc <- renderText({d_desc[['description']]})
       }
       
     } else {

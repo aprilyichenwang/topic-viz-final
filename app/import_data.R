@@ -48,3 +48,5 @@ neighborhoods_vars <- neighborhoods %>% select(one_of(c("Days on Market","Median
   mutate_each(funs(normalize))
 neighborhoods_norm <- df_par <- bind_cols(neighborhoods_group, neighborhoods_vars)
 
+# Neighborhood descriptions
+
