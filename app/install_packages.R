@@ -1,13 +1,3 @@
-library(shiny)
-library(ggvis)
-library(dplyr)
-library(tidyr)
-library(rgdal)
-library(leaflet)
-library(htmltools)
-library(lubridate)
-library(shinythemes)
-
 if (!require('shiny')){
   install.packages('shiny')
 }
